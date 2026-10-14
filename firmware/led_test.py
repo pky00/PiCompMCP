@@ -30,8 +30,8 @@ sm.active(1)
 
 
 def show(r, g, b):
-    # WS2812 expects GRB order, top 24 bits of the word
-    sm.put(array.array("I", [(g << 16) | (r << 8) | b]), 8)
+    # this board's LED takes RGB order (not the usual GRB), top 24 bits of the word
+    sm.put(array.array("I", [(r << 16) | (g << 8) | b]), 8)
 
 
 for name, rgb in (("red", (40, 0, 0)), ("green", (0, 40, 0)), ("blue", (0, 0, 40)), ("white", (40, 40, 40))):
