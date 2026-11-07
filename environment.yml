@@ -5,9 +5,9 @@ dependencies:          # no channels line: keeps the env's existing python/sqlit
   - pip:
       - pyserial==3.5
       - fastapi==0.143.0
-      - uvicorn>=0.31
+      - uvicorn==0.54.0
       - pynput==1.8.2
       - mss==10.2.0
-      - mpremote>=1.29
-      - pytest>=8
-      - httpx>=0.27        # FastAPI TestClient
+      - mpremote==1.29.0
+      - pytest==9.1.1
+      - httpx==0.28.1      # FastAPI TestClient
